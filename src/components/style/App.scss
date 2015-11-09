@@ -1,0 +1,25 @@
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+#app {
+  & > header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  & > .conversation-list {
+    position: fixed;
+    top: 4em;
+    left: 0;
+    width: 23em;
+    bottom: 0;
+    overflow-y: scroll;
+  }
+  padding-left: 23em;
+}
